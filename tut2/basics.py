@@ -74,10 +74,9 @@ while not zahl_gefunden:
 		
 		print("else block")
 		zahl_gefunden = True
+		print(gewaehlte_zahl)
 	finally:
 		# wird immer am Ende ausgeführt egal ob es eine Exception gab oder nicht
 		# hier cleanup Sachen
 		
 		print("finally block")
-
-print(gewaehlte_zahl)
