@@ -54,6 +54,11 @@ class TestBasicLanguageFeatures(unittest.TestCase):
 			result.append(i)
 		self.assertEqual(result, ["a", 3, 3.3])
 
+		result = ""
+		for i, v in enumerate(['tic', 'tac', 'toe']):
+			result += "{}:{}, ".format(i, v)
+		self.assertEqual(result, "0:tic, 1:tac, 2:toe, ")
+
 		j = 0
 		while j < 10:
 			print(j)
